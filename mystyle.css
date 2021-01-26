@@ -1,139 +1,172 @@
-*{
-    background-color: #e0ebeb;
-    font-family: 'Poppins', 'Trebuchet', 'sans-serif';
-    font-size: large;
+* {
+  font-family: "Poppins", "Trebuchet", "sans-serif";
+  font-size: large;
 }
 
+#resume:hover {
+  color: #0c343d;
+  font-weight: bold;
+}
+
+#resume:visited {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+#portfolioSite:visited {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+#portfolioSite:hover {
+  color: #0c343d;
+  font-weight: bold;
+}
 
 div {
-    margin:auto;
-    width: 85%;
-    text-align: left;
+  margin: auto;
+  width: 85%;
+  text-align: left;
 }
 
-div#navBar{
-    background-color: #ffffff00;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
+/* Nav Bar */
 
-div#title{
-    position: static;
-    margin-top: 75px;
-    text-align: left;
-}
-
-div.flexBoxes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-}
-
-div#experience {
-    width: 300px;
-    border: 15px solid#0c343d;
-    border-radius: 15px;
-    padding: 25px;
-    margin: 50px;
-}
-
-div#interests {
-    width: 300px;
-    border: 15px solid#0c343d;
-    border-radius: 15px;
-    padding: 25px;
-    margin: 50px;
-}
-
-div#resume {
-    width: 300px;
-    border: 15px solid#0c343d;
-    border-radius: 15px;
-    padding: 25px;
-    margin: 50px;
-}
-
-
-h1 {
-    color:	#0c343d;
-    text-align: left;
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-h2{
-    color:	#0c343d;
-    text-align: left;
-    font-size: x-large;
-}
-
-h3{
-    font-size: x-large;
-    text-decoration: underline;
+div#navContent.navbar-collapse.collapse {
+  background-color: #0c343d;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #0c343d;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0c343d;
+  overflow: hidden;
 }
 
 li {
-    display: inline;
-    font-size: x-large;
-    text-align: left;
-    float: left;
-    margin: 10px;
-    color: grey;
+  display: inline;
+  font-size: x-large;
+  text-align: left;
+  float: left;
+  margin: 10px;
+  color: grey;
 }
 
 li a {
-    text-decoration: none;
-    display: block;
-    background-color: #0c343d;
-    color: #e0ebeb;
+  text-decoration: none;
+  display: block;
+  background-color: #0c343d;
+  color: #e0ebeb;
+}
+
+li a:hover {
+  color: grey;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
+/* Divs */
+
+div#title {
+  position: static;
+  margin-top: 75px;
+  text-align: left;
+}
+
+div.flexBoxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+div#experience {
+  width: 300px;
+  border: 15px solid#0c343d;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 50px;
+}
+
+div#interests {
+  width: 300px;
+  border: 15px solid#0c343d;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 50px;
+}
+
+div#resume {
+  width: 300px;
+  border: 15px solid#0c343d;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 50px;
+}
+
+h1 {
+  color: #0c343d;
+  text-align: left;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+h2 {
+  color: #0c343d;
+  text-align: left;
+  font-size: x-large;
+}
+
+h3 {
+  font-size: x-large;
+  text-decoration: underline;
+}
+
+/* Contact Form */
 
 div#contactForm {
-    color: Black;
-    font-size: small;
+  color: Black;
+  font-size: small;
 }
 
-input textarea{
-    color: black;
-    background-color: white;
+input textarea {
+  color: black;
+  background-color: white;
 }
 
 table {
-    display: inline-flex;
-    border: ridge;
+  display: inline-flex;
 }
 
-tr td {
-    border: ridge;
+input {
+  border: solid grey 2px;
+  border-radius: 10px;
+}
+
+button {
+  border: solid grey 2px;
+  border-radius: 25px;
+}
+
+button:hover {
+  color: white;
+  background-color: grey;
 }
 
 #profilePic {
-    padding: 10px;
+  padding: 10px;
 }
 
 footer {
-    text-align: center;
-    color:  #292a3f;
-    background-color: #ffffff00;
-    position: static;
-    margin: 20 px;
-    width: 100%;
-    height: 2.5rem;
-    font-size: medium;
+  text-align: center;
+  color: #292a3f;
+  background-color: #ffffff00;
+  position: static;
+  margin: 20 px;
+  width: 100%;
+  height: 2.5rem;
+  font-size: medium;
 }
