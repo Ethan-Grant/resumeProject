@@ -1,45 +1,82 @@
+/* ----------------------------------------------------------
+----------------------General-------------------------------- 
+-----------------------------------------------------------*/
+
 * {
   font-family: "Poppins", "Trebuchet", "sans-serif";
   font-size: large;
 }
 
-#resume:hover {
-  color: #0c343d;
-  font-weight: bold;
+body {
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1580637250481-b78db3e6f84b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
-#resume:visited {
-  color: lightseagreen;
-  text-decoration: none;
-}
-
-#portfolioSite:visited {
-  color: lightseagreen;
-  text-decoration: none;
-}
-
-#portfolioSite:hover {
-  color: #0c343d;
-  font-weight: bold;
+p:not(#flexText) {
+  margin: 0.5vh 5vw;
 }
 
 div {
-  margin: auto;
-  width: 85%;
   text-align: left;
 }
 
-/* Nav Bar */
+footer {
+  text-align: center;
+  color: #0E3B43;
+  background-color: #ffffff00;
+  position: static;
+  width: 100%;
+  margin: 2vh 0vw;
+}
 
-div#navContent.navbar-collapse.collapse {
-  background-color: #0c343d;
+.footerText {
+  font-size: large;
+  font-weight: bold;
+}
+
+#profilePic {
+  margin: 5vh 5vw;
+  max-width: 25vw;
+}
+
+/* ----------------------------------------------------------
+----------------------Link Styles---------------------------- 
+-----------------------------------------------------------*/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c343d;
+  font-weight: bold;
+}
+
+a:visited {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------------
+-------------------------Nav Bar----------------------------- 
+-----------------------------------------------------------*/
+
+.navbar {
+  background-color: #357266;
+  border-radius: 0px 0px 10px 10px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #0c343d;
+  background-color: #357266;
   overflow: hidden;
 }
 
@@ -48,32 +85,50 @@ li {
   font-size: x-large;
   text-align: left;
   float: left;
-  margin: 10px;
-  color: grey;
+  margin: 5px;
+  color: white;
 }
 
 li a {
   text-decoration: none;
   display: block;
-  background-color: #0c343d;
-  color: #e0ebeb;
+  background-color: #357266;
+  color: white;
 }
 
 li a:hover {
   color: grey;
 }
 
-a {
-  text-decoration: none;
-}
+/* ----------------------------------------------------------
+---------------------- Headings------------------------------ 
+-----------------------------------------------------------*/
 
-/* Divs */
-
-div#title {
-  position: static;
-  margin-top: 75px;
+h1 {
+  color: #357266;
   text-align: left;
+  font-weight:bolder;
+  font-size: 5vh;
+  margin: 2vh;
 }
+
+h2 {
+  color: #0E3B43;
+  text-align: left;
+  font-size: 4vh;
+  font-weight: bold;
+  margin: 2vh;
+}
+
+h3 {
+  color: #0E3B43;
+  font-size: 3vh;
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------------------
+----------------------Boxes---------------------------------- 
+-----------------------------------------------------------*/
 
 div.flexBoxes {
   display: flex;
@@ -83,62 +138,34 @@ div.flexBoxes {
   justify-content: center;
 }
 
-div#experience {
+#boxDesign {
   width: 300px;
-  border: 15px solid#0c343d;
+  border: 5px solid #0E3B43;
   border-radius: 15px;
   padding: 25px;
   margin: 50px;
+  float: left;
+  background-color: white;
 }
 
-div#interests {
-  width: 300px;
-  border: 15px solid#0c343d;
-  border-radius: 15px;
-  padding: 25px;
-  margin: 50px;
-}
+/* ----------------------------------------------------------
+----------------------Contact Form--------------------------- 
+-----------------------------------------------------------*/
 
-div#resume {
-  width: 300px;
-  border: 15px solid#0c343d;
-  border-radius: 15px;
-  padding: 25px;
-  margin: 50px;
-}
-
-h1 {
-  color: #0c343d;
-  text-align: left;
-  font-weight: bold;
-  font-size: xx-large;
-}
-
-h2 {
-  color: #0c343d;
-  text-align: left;
-  font-size: x-large;
-}
-
-h3 {
-  font-size: x-large;
-  text-decoration: underline;
-}
-
-/* Contact Form */
-
-div#contactForm {
+#contactForm {
   color: Black;
   font-size: small;
+  margin: 0vh 5vw;
 }
 
-input textarea {
+textarea {
   color: black;
   background-color: white;
 }
 
 table {
   display: inline-flex;
+  width: 85%;
 }
 
 input {
@@ -153,20 +180,9 @@ button {
 
 button:hover {
   color: white;
-  background-color: grey;
+  background-color: #357266;
 }
 
-#profilePic {
-  padding: 10px;
-}
-
-footer {
-  text-align: center;
-  color: #292a3f;
-  background-color: #ffffff00;
-  position: static;
-  margin: 20 px;
-  width: 100%;
-  height: 2.5rem;
-  font-size: medium;
+label {
+  padding: 0px 5px 0px 0px;
 }

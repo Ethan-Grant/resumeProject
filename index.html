@@ -30,7 +30,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
 <a href="index.html" class="navbar-brand">Ethan Grant</a>
 <button class="navbar-toggler" data-toggle="collapse" data-target="#navContent">        <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,39 +44,46 @@
  </div>    
  </nav>
 
-<div id="title">
-    <h1>Ethan Grant, Entry Level Developer</h1>    
-</div>
+<header class="mainHeader">
+    <h1>
+        Ethan Grant, Entry Level Developer
+    </h1>   
+
 
 <div>
 <h2>Overview</h2>
 </div>
 
-<div class=flexBoxes>
-<div id='experience'>
-        <p><h3>Experience:</h3></p>
-        <p>Enrolled in SLCC Web Development and Design Certificate</p>
-        <p>HTML, CSS</p>
+<div class="flexBoxes">
+<div id='boxDesign'>
+        <p id="flexText"><h3>Experience:</h3></p>
+        <p id="flexText">Enrolled in SLCC Web Development and Design Certificate</p>
+        <p id="flexText">HTML, CSS</p>
 </div>
 
-<div id='interests'>
-        <p><h3>Interests:</h3></p>
-        <p>Networking and Hardware</p>
-        <p>Front and Back End Development</p>
-        <p>Video Games</p>
-        <p>UI Design</p>
+<div id='boxDesign'>
+        <p id="flexText"><h3>Interests:</h3></p>
+        <p id="flexText">Networking and Hardware</p>
+        <p id="flexText">Front and Back End Development</p>
+        <p id="flexText">Video Games</p>
+        <p id="flexText">UI Design</p>
 </div>
 
-<div id='resume'> 
-<h3>Resume:</h3>
-<a  id="resume" href="downloads\ethanGrantResume.pdf" download="Ethan Grant Resume">Click Here to Download My Resume!</a>
+<div id='boxDesign'> 
+<p id="flexText"><h3>Resume:</h3></p>
+<P>
+    <!-- Empty to keep formatting consistent -->
+</P>
+<a href="downloads\ethanGrantResume.pdf" download="Ethan Grant Resume">Click Here to Download My Resume!</a>
 </div>
 </div>
+
+
 
 <br>
 
-<footer>
-<p>Thank you for visiting! Hope to hear from you soon!
+<footer class="py-4">
+<p class="footerText">Thank you for visiting! Hope to hear from you soon!
 </footer>
 
 </body>
